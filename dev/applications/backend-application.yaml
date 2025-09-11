@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dollweb-backend-dev
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/sabrina/helm-charts.git
+    targetRevision: main
+    path: backend
+    helm:
+      valueFiles:
+        - https://raw.githubusercontent.com/sabrina/dollweb.gitops/main/dev/backend/values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dollweb-dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

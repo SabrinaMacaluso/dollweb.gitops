@@ -1,0 +1,11 @@
+replicaCount: 1
+image:
+  repository: ghcr.io/sabrinamacaluso/doll-website-frontend
+  tag: develop-e4e3c99
+service:
+  type: NodePort
+  port: 80
+env:
+  REACT_APP_API_URL: "http://backend-service:5000"
+imagePullSecrets:
+  - name: ghcr-secret

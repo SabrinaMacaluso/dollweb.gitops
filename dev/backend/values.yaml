@@ -1,0 +1,9 @@
+replicaCount: 1
+image:
+  repository: ghcr.io/sabrinamacaluso/doll-website-backend
+  tag: develop-e4e3c99
+service:
+  type: ClusterIP
+  port: 5000
+imagePullSecrets:
+  - name: ghcr-secret
