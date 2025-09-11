@@ -2,7 +2,7 @@ replicaCount: 1
 namespace: dollweb-dev
 image:
   repository: ghcr.io/sabrinamacaluso/doll-website-backend
-  tag: develop-e3cb128
+  tag: v1
 service:
   type: ClusterIP
   port: 5000
