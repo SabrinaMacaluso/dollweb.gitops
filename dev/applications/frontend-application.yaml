@@ -6,12 +6,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/sabrina/helm-charts.git
+    repoURL: https://github.com/sabrinamacaluso/helm-charts.git
     targetRevision: main
     path: frontend
     helm:
+
       valueFiles:
-        - https://raw.githubusercontent.com/sabrina/dollweb.gitops/main/dev/frontend/values.yaml
+        - https://raw.githubusercontent.com/sabrinamacaluso/dollweb.gitops/main/dev/frontend/values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: dollweb-dev
