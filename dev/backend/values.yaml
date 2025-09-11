@@ -2,11 +2,7 @@ replicaCount: 1
 namespace: dollweb-dev
 image:
   repository: ghcr.io/sabrinamacaluso/doll-website-backend
-<<<<<<< HEAD
   tag: develop-8dfb0d5
-=======
-  tag: develop-e3cb128
->>>>>>> 27cdf160b6b2135427961b23bd63c5caa10a5cfb
 service:
   type: ClusterIP
   port: 5000
