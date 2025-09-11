@@ -2,7 +2,7 @@ replicaCount: 1
 namespace: dollweb-dev
 image:
   repository: ghcr.io/sabrinamacaluso/doll-website-frontend
-  tag: develop-e4e3c99
+  tag: develop-8dfb0d5
 service:
   type: NodePort
   port: 80
