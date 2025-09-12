@@ -2,7 +2,7 @@ replicaCount: 1
 namespace: dollweb-dev
 image:
   repository: ghcr.io/sabrinamacaluso/doll-website-frontend
-  tag: v1
+  tag: develop-8dfb0d5
   pullPolicy: Always
 service:
   type: NodePort
