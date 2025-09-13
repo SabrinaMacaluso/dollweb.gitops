@@ -1,11 +1,12 @@
-replicaCount: 1
-namespace: dollweb-dev
-image:
-  repository: ghcr.io/sabrinamacaluso/doll-website-backend
-  tag: develop-8dfb0d5
-  pullPolicy: Always
-service:
-  type: ClusterIP
-  port: 5000
-imagePullSecrets:
-  - name: ghcr-secret
+backend:
+  replicaCount: 1
+  namespace: dollweb-dev
+  image:
+    repository: ghcr.io/sabrinamacaluso/doll-website-backend
+    tag: develop-8dfb0d5
+    pullPolicy: Always
+  service:
+    type: ClusterIP
+    port: 5000
+  imagePullSecrets:
+    - name: ghcr-secret
