@@ -3,7 +3,7 @@ backend:
   namespace: dollweb-dev
   image:
     repository: ghcr.io/sabrinamacaluso/doll-website-backend
-    tag: develop-8dfb0d5
+    tag: develop-e3cb128
     pullPolicy: Always
   service:
     type: ClusterIP
