@@ -9,12 +9,6 @@ spec:
     repoURL: https://github.com/sabrinamacaluso/dollweb.gitops.git
     targetRevision: main
     path: dev/backend
-    helm:
-      chart: backend
-      repoURL: https://sabrinamacaluso.github.io/helm-charts/
-      version: 0.1.0
-      valueFiles: 
-        - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: dollweb-dev

@@ -1,0 +1,7 @@
+apiVersion: v2
+name: dollweb-frontend-dev
+version: 0.1.0
+dependencies:
+  - name: frontend
+    version: 0.1.0
+    repository: "https://sabrinamacaluso.github.io/helm-charts"
